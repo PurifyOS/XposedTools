@@ -339,7 +339,13 @@ if [ -z $XVALID ]; then
 fi
 
 getvar SYSTEMLESS
-prepare_systemless
+if $SYSTEMLESS_ENABLE; then
+  prepare_systemless
+fi
+if $SYSTEMLESS_DISABLE; then
+  SYSTEMLESS=false
+  VALID=false
+fi
 
 if [ "$SYSTEMLESS" = "true" -a "$VALID" = "false" ]; then
   ui_print "! Config forces systemless install but requirements aren't met"
