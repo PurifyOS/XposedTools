@@ -17,7 +17,7 @@ use Term::ANSIColor;
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 
 our $cfg;
-my $MAX_SUPPORTED_SDK = 23;
+my $MAX_SUPPORTED_SDK = 26;
 
 sub print_status($$) {
     my $text = shift;
