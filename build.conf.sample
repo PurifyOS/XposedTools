@@ -1,6 +1,7 @@
 [General]
 outdir = /android/out
 javadir = /android/XposedBridge
+magisk_template = /android/magisk_xposed_purify
 
 [Build]
 # Please keep the base version number and add your custom suffix
