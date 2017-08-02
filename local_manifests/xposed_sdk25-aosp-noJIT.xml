@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com" />
+  <project path="frameworks/base/cmds/xposed" name="PurifyOS/xposed_app_process" remote="github" revision="master"/>
+  <remove-project name="platform/art" />
+  <project path="art" name="PurifyOS/xposed_art_n" remote="github" revision="aosp-7.1.2_r27-noJIT"/>
+</manifest>
